@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Freak</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Protest+Strike&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /*CSS Reset*/ 
+    body{
+       font-family:"Protest Strike", sans-serif;
+       color:white;
+       margin:0px;
+       padding:0px;
+       background-image:url('img/bg2.jpg');
+       background-repeat:no-repeat;
+       background-size:cover;
+      }
+    .left{
+        display:inline-block;
+        border:0px solid red;
+        position:absolute;
+        top:20px;
+        left:35px;
+    }
+    .left img{
+        width:75px;
+    }
+    .left div{
+        font-size:16px;
+        text-align:center;
+        font-family:"Protest Strike", sans-serifs;
+        line-height: 19px;
+    }
+    .mid{
+        display:block;
+        width:722px;
+        margin:11px auto;
+        border:0px solid yellow;
+    }
+    .right{
+        position:absolute;
+        right:35px;
+        top:29px;
+        display:inline-block;
+        border:0px solid green;
+    }
+    .navbar{
+        display:inline-block;
+    }
+    .navbar li{
+        display:inline-block;
+    }
+    .navbar li a{
+        color:aqua;
+        text-decoration:none;
+        padding:30px 23px;
+        font-family:"Protest Strike", sans-serifs;
+        font-size:23px;
+    }
+    .navbar li a:hover,navbar li a.active{
+        text-decoration:underline;
+        color:yellow;
+    }
+    .btn{
+        font-family:"Protest Strike", sans-serifs;
+        margin:-3px 9px;
+        color:aqua;
+        background-color:black;
+        border:solid 2px grey;
+        border-radius:10px;
+        padding:4px 14px;
+        font-size:17px;
+        cursor:pointer;
+
+    }
+    .btn:hover{
+        background-color:grey;
+    }
+    .container{
+        border:0px solid;
+        margin :-21px 850px;
+        padding: 46px 59px;
+        width:23%;
+        border-radius:20px;
+    }
+    .form-group input{
+        text-align:center;
+        display:block;
+        width:250px;
+        padding:8px;
+        border:3px solid black;
+        margin:11px auto;
+        font-size:15px;
+        font-family:"Protest Strike", sans-serifs;
+        border-radius:10px;
+
+    }
+    .container h1{
+        text-align:center;
+        font-family:"Protest Strike", sans-serifs;
+        color:black;
+
+    }
+    .container button{
+        width:28%;
+        margin:auto;
+        display:block;
+    }
+    .info{
+        width:33%;
+        border:0px solid;
+        margin:-388px 10px;
+        color:cornflowerblue;
+        font-size:28px;
+        font-family:"Protest Strike", sans-serifs; 
+        padding:2px;
+    }
+    .info button{
+        background-color: darkgray;
+        width:15%;
+        border-radius:10px;
+        border:2px solid black;
+        padding:2px;
+    }
+    .info button:hover{
+        cursor:pointer;
+        color:darkred;
+        background-color:orange;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+           <img src="img/img1.png">
+           <div>Fitness Freak</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+               </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+
+    </header>
+    <div class="container">
+      <h1>Get Started</h1>
+      <form action="noaction.php">
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter your name">
+         </div>
+         <div class="form-group">
+            <input type="number" name="" placeholder="Enter your age">
+         </div>
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter your gender">
+         </div>
+         <div class="form-group">
+            <input type="tel" id="phonenumber" name="phonenumber" pattern="[0-9]{10}" inputmode="numeric" name="" placeholder="Enter your Phone number">
+         </div>
+         <div class="form-group">
+            <input type="email" name="" placeholder="Enter your email">
+         </div>
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter your address">
+         </div>
+         <button class="btn">Submit</button>
+      </form>
+    </div>
+    <div class="info">
+        <div style="color:khaki;font-size:25px">Shape your body</div>
+         Don't stop <br>
+         when you're tired.<br>
+         Stop when <br>
+         you're<div style="color:orange;font-size:30px">Done.</div>
+         <button>Info</button>
+     </div>
+</body>
+</html>
